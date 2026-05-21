@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aytida Technologies | Software Innovation</title>
+    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="icon" type="image/png" href="assets/app_logo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+</head>
+
+<body>
+
+    <!-- Animated Abstract Background -->
+    <div class="bg-animation" id="bg-animation">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <!-- Mouse Trail Particles -->
+        <div class="mouse-particle particle-1" id="p1"></div>
+        <div class="mouse-particle particle-2" id="p2"></div>
+        <div class="mouse-particle particle-3" id="p3"></div>
+        <!-- Dynamic Elements Container -->
+        <div id="dynamic-bg-elements"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <img src="assets/app_logo.png" alt="Aytida Logo"> Aytida Technologies
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#internship">Internship</a></li>
+                <li><a href="#portal">Portal</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">Let's Talk</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero container">
+        <div class="hero-content">
+            <div class="hero-badge">Software Innovation Lab</div>
+            <h1>Building the Next Gen of <span class="text-gradient-orange">Digital Solutions</span></h1>
+            <p>Aytida Technologies engineers scalable, high-performance applications that solve real-world challenges
+                while shaping the tech leaders of tomorrow.</p>
+            <div class="hero-btns">
+                <a href="#products" class="btn btn-primary">Our Products</a>
+                <a href="#internship" class="btn btn-outline">Join Internship</a>
+            </div>
+        </div>
+        <div class="hero-graphic" id="hero-parallax">
+            <div class="glass-panel panel-1">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div
+                        style="width: 45px; height: 45px; border-radius: 12px; background: linear-gradient(135deg, var(--primary-blue), var(--light-blue)); display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 8px 15px rgba(42, 129, 234, 0.3);">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem;">CampusChat</h4>
+                        <span style="font-size: 0.8rem; color: var(--light-blue); font-weight: 600;">EdTech
+                            Platform</span>
+                    </div>
+                </div>
+                <div
+                    style="height: 8px; width: 100%; background: rgba(255,255,255,0.05); border-radius: 10px; margin-bottom: 12px; overflow: hidden;">
+                    <div
+                        style="height: 100%; width: 75%; background: linear-gradient(90deg, var(--primary-blue), var(--light-blue)); border-radius: 10px; animation: progressAnim 2s ease-out forwards;">
+                    </div>
+                </div>
+                <div style="height: 8px; width: 60%; background: rgba(255,255,255,0.05); border-radius: 10px;"></div>
+            </div>
+
+            <div class="glass-panel panel-2">
+                <h4 style="color: var(--primary-orange); margin-bottom: 12px; font-size: 1.1rem;">Code Catalyst</h4>
+                <p style="font-size: 0.85rem; color: var(--text-light); margin-bottom: 15px;">Training the next
+                    generation of full-stack engineers.</p>
+                <div style="display: flex; gap: 15px; color: var(--text-white); font-size: 1.2rem;">
+                    <i class="fa-brands fa-react" style="color: #61DAFB;"></i>
+                    <i class="fa-brands fa-js" style="color: #F7DF1E;"></i>
+                    <i class="fa-brands fa-node-js" style="color: #339933;"></i>
+                    <i class="fa-brands fa-python" style="color: #3776AB;"></i>
+                    <i class="fa-brands fa-flutter" style="color: #61DAFB;"></i>
+
+                </div>
+            </div>
+
+            <div class="glass-panel panel-3">
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;">
+                    <div
+                        style="width: 45px; height: 45px; border-radius: 12px; background: linear-gradient(135deg, var(--primary-orange), #ff9d4a); display: flex; align-items: center; justify-content: center; color: white; box-shadow: 0 8px 15px rgba(245, 127, 32, 0.3);">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <div>
+                        <h4 style="margin: 0; font-size: 1.1rem;">Society Seva</h4>
+                        <span style="font-size: 0.8rem; color: #ff9d4a; font-weight: 600;">Community App</span>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 12px; margin-top: 15px;">
+                    <div
+                        style="flex: 1; height: 35px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                    </div>
+                    <div
+                        style="flex: 1; height: 35px; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="text-gradient">Our Flagship Products</h2>
+                <p>We build robust, scalable platforms designed to connect communities and streamline complex
+                    operations.</p>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-icon" style="color: var(--primary-blue); background: rgba(42, 129, 234, 0.1);">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3>CampusChat</h3>
+                    <p>A comprehensive communication and management platform tailored specifically for educational
+                        institutions, connecting students, faculty, and administration seamlessly.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Real-time campus announcements</li>
+                        <li><i class="fa-solid fa-check"></i> Secure faculty-student messaging</li>
+                        <li><i class="fa-solid fa-check"></i> Academic resource sharing</li>
+                        <li><i class="fa-solid fa-check"></i> Event scheduling & management</li>
+                    </ul>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-icon">
+                        <i class="fa-solid fa-building-user"></i>
+                    </div>
+                    <h3>Society Seva App</h3>
+                    <p>A modern community management application aimed at streamlining residential society operations,
+                        enhancing security, and fostering a better living environment.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-check"></i> Automated visitor management</li>
+                        <li><i class="fa-solid fa-check"></i> Maintenance fee tracking</li>
+                        <li><i class="fa-solid fa-check"></i> Facility booking system</li>
+                        <li><i class="fa-solid fa-check"></i> Community helpdesk & ticketing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="section-padding internship-section">
+        <div class="container internship-content">
+            <div class="internship-text">
+                <div class="catalyst-logo">
+                    <img src="assets/cclogo.png" alt="Code Catalyst Logo" style="height: 50px; width: auto; filter: drop-shadow(0 0 10px rgba(245, 127, 32, 0.2));">
+                    <span style="margin-left: 10px;">CODE</span><span>CATALYST</span>
+                </div>
+                <h2>Empowering the Next Generation of Tech Leaders</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 20px;">Aytida Technologies isn't just about building apps;
+                    we're about building careers. Our Code Catalyst Intern program is an intensive, hands-on experience
+                    designed to bridge the gap between academic learning and industry demands.</p>
+
+                <div class="internship-highlights">
+                    <div class="highlight-item">
+                        <h4>Real Projects</h4>
+                        <p>Work on production-grade applications.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Expert Mentorship</h4>
+                        <p>Learn from our senior engineers.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Modern Stack</h4>
+                        <p>Master React, Flutter, and more.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h4>Career Growth</h4>
+                        <p>Build an impressive portfolio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="internship-card">
+                <div
+                    style="background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 20px; padding: 40px; text-align: center;">
+                    <h3 class="font-montserrat" style="font-size: 2rem; margin-bottom: 10px;">I <span
+                            style="color: var(--light-blue);">LEARNED.</span> I <span
+                            style="color: var(--primary-orange);">BUILT.</span> I GROW.</h3>
+                    <p>Our interns master the tools that power the modern web and mobile ecosystems.</p>
+
+                    <div class="tech-marquee">
+                        <div class="marquee-content">
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-brands fa-figma"></i>
+                            <i class="fa-brands fa-github"></i>
+                            <!-- Duplicate for seamless scroll -->
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <i class="fa-brands fa-js"></i>
+                            <i class="fa-brands fa-react"></i>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 30px;">
+                        <a href="#" class="btn btn-primary" style="width: 100%;">Apply for Internship</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <div class="container">
+        <div class="cta-section" id="contact">
+            <h2>Ready to transform your ideas into reality?</h2>
+            <p style="margin-bottom: 30px; font-size: 1.1rem;">Whether you need a custom enterprise solution or want to
+                join our dynamic team.</p>
+            <a href="#" class="btn btn-primary">Contact Us Today</a>
+        </div>
+    </div>
+
+    <!-- Intern Login Section -->
+    <section id="portal" class="section-padding" style="padding-top: 0; padding-bottom: 100px;">
+        <div class="container">
+            <div style="background: linear-gradient(145deg, rgba(10, 22, 44, 0.9), rgba(15, 30, 55, 0.7)); border: 1px solid rgba(245, 127, 32, 0.2); border-radius: 32px; backdrop-filter: blur(20px); padding: 70px 50px; box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6); text-align: center; position: relative; overflow: hidden;">
+                <!-- Decorative elements -->
+                <div style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(245, 127, 32, 0.15) 0%, transparent 70%); filter: blur(50px); pointer-events: none;"></div>
+                <div style="position: absolute; bottom: -100px; left: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(42, 129, 234, 0.1) 0%, transparent 70%); filter: blur(50px); pointer-events: none;"></div>
+                
+                <img src="cclogo.png" alt="Code Catalyst Logo" style="height: 140px; width: auto; margin-bottom: 30px; filter: drop-shadow(0 0 30px rgba(245, 127, 32, 0.4)); position: relative; z-index: 1;">
+                
+                <h2 style="font-size: 3.2rem; margin-bottom: 20px; position: relative; z-index: 1; font-weight: 900;">Intern <span class="text-gradient-orange">Login Portal</span></h2>
+                
+                <p style="max-width: 750px; margin: 0 auto 40px; font-size: 1.25rem; color: var(--text-light); position: relative; z-index: 1; line-height: 1.8;">
+                    Ready to accelerate your journey? Log in to your dedicated workspace to access training modules, track your internship progress, and collaborate with the engineering team.
+                </p>
+                
+                <div style="display: flex; flex-direction: column; align-items: center; gap: 20px; position: relative; z-index: 1;">
+                    <a href="https://codecatalyst.online/" target="_blank" class="btn btn-primary" style="padding: 18px 50px; font-size: 1.2rem; display: flex; align-items: center; gap: 15px; border-radius: 15px; box-shadow: 0 10px 30px rgba(245, 127, 32, 0.4);">
+                        <i class="fa-solid fa-right-to-bracket"></i> Intern Login Dashboard
+                    </a>
+                    <p style="font-size: 0.9rem; opacity: 0.7;">Direct access to codecatalyst.online</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <img src="app_logo.png" alt="Aytida Logo"> Aytida Technologies
+                    </div>
+                    <p>Aytida Technologies is a forward-thinking software development agency dedicated to building
+                        robust digital solutions and empowering tech talent.</p>
+                    <div class="logo" style="margin-top: 30px; opacity: 0.8;">
+                        <img src="cclogo.png" alt="Code Catalyst Logo" style="height: 35px; background: none; padding: 0;"> 
+                        <span style="font-size: 1rem;">Code Catalyst Partner</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#home">About Us</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#internship">Careers / Internships</a></li>
+                        <li><a href="#portal">Intern Portal</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-linkedin" style="margin-right: 10px;"></i> LinkedIn</a>
+                        </li>
+                        <li><a href="#"><i class="fa-brands fa-twitter" style="margin-right: 10px;"></i> Twitter</a>
+                        </li>
+                        <li><a href="#"><i class="fa-brands fa-github" style="margin-right: 10px;"></i> GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aytida Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Background element animations
+        const p1 = document.getElementById('p1');
+        const p2 = document.getElementById('p2');
+        const p3 = document.getElementById('p3');
+
+        const particles = [
+            { el: p1, x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight, vx: 0.2, vy: 0.15 },
+            { el: p2, x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight, vx: -0.15, vy: 0.2 },
+            { el: p3, x: Math.random() * window.innerWidth, y: Math.random() * window.innerHeight, vx: 0.1, vy: -0.1 }
+        ];
+
+        function animateParticles() {
+            particles.forEach(p => {
+                p.x += p.vx;
+                p.y += p.vy;
+
+                if (p.x < -200) p.x = window.innerWidth + 200;
+                if (p.x > window.innerWidth + 200) p.x = -200;
+                if (p.y < -200) p.y = window.innerHeight + 200;
+                if (p.y > window.innerHeight + 200) p.y = -200;
+
+                p.el.style.left = `${p.x}px`;
+                p.el.style.top = `${p.y}px`;
+            });
+            requestAnimationFrame(animateParticles);
+        }
+
+        animateParticles();
+
+        // Dynamic Stars and Shooting Lines
+        const container = document.getElementById('dynamic-bg-elements');
+        const starCount = 50;
+        const stars = [];
+
+        for (let i = 0; i < starCount; i++) {
+            const star = document.createElement('div');
+            star.className = 'star';
+            const size = Math.random() * 2 + 1;
+            star.style.width = `${size}px`;
+            star.style.height = `${size}px`;
+
+            const s = {
+                el: star,
+                x: Math.random() * window.innerWidth,
+                y: Math.random() * window.innerHeight,
+                vx: (Math.random() - 0.5) * 0.5,
+                vy: (Math.random() - 0.5) * 0.5,
+                opacity: Math.random() * 0.5 + 0.1
+            };
+
+            star.style.opacity = s.opacity;
+            container.appendChild(star);
+            stars.push(s);
+        }
+
+        function createShootingLine() {
+            const line = document.createElement('div');
+            line.className = 'shooting-line';
+            const length = Math.random() * 100 + 100;
+            line.style.width = `${length}px`;
+
+            const startX = Math.random() * window.innerWidth;
+            const startY = Math.random() * (window.innerHeight * 0.7);
+            const angle = 20 + Math.random() * 20; // 20-40 degrees
+
+            line.style.left = `${startX}px`;
+            line.style.top = `${startY}px`;
+            line.style.transform = `rotate(${angle}deg) translateX(0)`;
+
+            container.appendChild(line);
+
+            const duration = 1000 + Math.random() * 1000;
+            const anim = line.animate([
+                { transform: `rotate(${angle}deg) translateX(0)`, opacity: 0 },
+                { transform: `rotate(${angle}deg) translateX(${length * 2}px)`, opacity: 0.8, offset: 0.5 },
+                { transform: `rotate(${angle}deg) translateX(${length * 4}px)`, opacity: 0 }
+            ], {
+                duration: duration,
+                easing: 'ease-in'
+            });
+
+            anim.onfinish = () => line.remove();
+        }
+
+        // Random shooting lines
+        setInterval(() => {
+            if (Math.random() > 0.7) createShootingLine();
+        }, 2000);
+
+        function updateStars() {
+            stars.forEach(s => {
+                s.x += s.vx;
+                s.y += s.vy;
+
+                // Wrap around
+                if (s.x < 0) s.x = window.innerWidth;
+                if (s.x > window.innerWidth) s.x = 0;
+                if (s.y < 0) s.y = window.innerHeight;
+                if (s.y > window.innerHeight) s.y = 0;
+
+                s.el.style.transform = `translate(${s.x}px, ${s.y}px)`;
+            });
+            requestAnimationFrame(updateStars);
+        }
+
+        updateStars();
+    </script>
+</body>
+
+</html>
