@@ -4,6 +4,8 @@
     background:var(--primary-orange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+
 
 }
 
@@ -11,9 +13,14 @@
     text-align:center;
     font-size:1.2rem;
     color:var(--text-light);
-    margin-top:10px;
+    margin-top:15px;
     display:flex;
     justify-content:center;
+}
+
+/* Use Montserrat for all primary headings */
+h1, h2 {
+  font-family: 'Montserrat', sans-serif;
 }
 
  .logo {
@@ -91,7 +98,7 @@
   margin: 40px 0;
   padding: 20px;
   justify-content: center; 
-  box-shadow: 0 20px 20px rgba(91, 140, 224, 0.1);
+  /* box-shadow: 0 20px 20px rgba(91, 140, 224, 0.1); */
 }
 
 /* glow beneath the card */
@@ -130,4 +137,47 @@
     color:var(--text-light);
     list-style:none
    
+}
+
+a {
+  text-decoration: none;   
+  color: inherit;          
+  font-family: sans-serif; 
+  font-weight: bold;      
+}
+
+
+a:hover {
+  color: rgb(88,199,250); 
+}
+
+.campus-container{
+  height: auto;
+  width: 48%;
+  gap: 20px;
+  margin: 20px 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+#campus{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+}
+
+.campus-screen{
+  width: 48%;
+  text-align: center;
+}
+
+.campus-screen img.campus-screenshot{
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: inline-block;
 }
