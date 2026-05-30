@@ -1,0 +1,146 @@
+:root {
+
+            --bg-dark: #040d1a;
+            --bg-card: #0a162c;
+            --primary-orange: #f57f20;
+            --primary-blue: #2a81ea;
+            --light-blue: #5ba3f8;
+            --text-light: #94a3b8;
+            --text-white: #ffffff;
+            --glass-bg: rgba(10, 22, 44, 0.7);
+            --glass-border: rgba(91, 163, 248, 0.15);
+            
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+    
+
+        /* Animated Abstract Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            overflow: hidden;
+            background-color: var(--bg-dark);
+        }
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.4;
+            animation: moveOrb 20s infinite alternate ease-in-out;
+        }
+
+        .orb-1 {
+            width: 40vw;
+            height: 40vw;
+            background: var(--primary-blue);
+            top: -10vw;
+            left: -10vw;
+            animation-duration: 25s;
+        }
+
+        .orb-2 {
+            width: 35vw;
+            height: 35vw;
+            background: var(--primary-orange);
+            bottom: -10vw;
+            right: -10vw;
+            animation-duration: 22s;
+            animation-delay: -5s;
+        }
+
+        .orb-3 {
+            width: 30vw;
+            height: 30vw;
+            background: var(--light-blue);
+            top: 30%;
+            left: 30%;
+            animation-duration: 30s;
+            animation-delay: -10s;
+        }
+
+        /* Mouse Trail Particles */
+        .mouse-particle {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+            will-change: transform;
+            filter: blur(20px);
+        }
+
+        .particle-1 {
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(42, 129, 234, 0.15) 0%, transparent 70%);
+            filter: blur(60px);
+        }
+
+        .particle-2 {
+            width: 250px;
+            height: 250px;
+            background: radial-gradient(circle, rgba(245, 127, 32, 0.2) 0%, transparent 70%);
+            filter: blur(40px);
+        }
+
+        .particle-3 {
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, rgba(91, 163, 248, 0.25) 0%, transparent 70%);
+            filter: blur(30px);
+        }
+
+        /* Floating Stars & Lines */
+        .star {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.3;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .shooting-line {
+            position: absolute;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(91, 163, 248, 0.6), transparent);
+            pointer-events: none;
+            z-index: 0;
+            transform-origin: left;
+        }
+
+        .grid-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image:
+                linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: 1;
+        }

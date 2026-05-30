@@ -549,8 +549,8 @@
         }
 
         .internship-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            display: flex;
+            flex-wrap: wrap;
             gap: 60px;
             align-items: center;
         }
@@ -658,6 +658,83 @@
         .cta-section h2 {
             font-size: 2.5rem;
             margin-bottom: 20px;
+        }
+
+        /* Portal (Intern Login) Card - responsive */
+        .portal-card {
+            background: linear-gradient(145deg, rgba(10, 22, 44, 0.9), rgba(15, 30, 55, 0.7));
+            border: 1px solid rgba(245, 127, 32, 0.2);
+            border-radius: 32px;
+            backdrop-filter: blur(20px);
+            padding: clamp(24px, 6vw, 70px);
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            max-width: 1100px;
+            width: 100%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        .portal-card img {
+            height: auto;
+            max-width: 220px;
+            width: auto;
+            margin-bottom: 30px;
+        }
+
+        .portal-card h2 {
+            font-size: clamp(1.6rem, 3.2vw, 3.2rem);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            font-weight: 900;
+        }
+
+        .portal-card p {
+            max-width: 750px;
+            margin: 0 auto 40px;
+            font-size: clamp(1rem, 1.25vw, 1.25rem);
+            color: var(--text-light);
+            line-height: 1.6;
+            position: relative;
+            z-index: 1;
+        }
+
+        .portal-card .btn {
+            padding: 14px 32px;
+            font-size: 1rem;
+            border-radius: 12px;
+        }
+
+        .portal-logo {
+            height: auto;
+            max-width: 220px;
+            width: auto;
+            margin-bottom: 30px;
+            filter: drop-shadow(0 0 30px rgba(245, 127, 32, 0.4));
+            position: relative;
+            z-index: 1;
+        }
+
+        .portal-actions {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .portal-cta {
+            padding: clamp(12px, 2.5vw, 18px) clamp(20px, 4vw, 50px);
+            font-size: clamp(0.95rem, 1.2vw, 1.2rem);
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(245, 127, 32, 0.4);
         }
 
         /* Footer */
