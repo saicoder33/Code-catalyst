@@ -207,6 +207,7 @@ a:hover {
 .home-btn{
   padding: 10px 20px;
   background-color: var(--primary-orange);
+  color: var(--text-white);
   border: none; 
   border-radius: 8px;
   margin: 20px;
