@@ -76,7 +76,8 @@ h1, h2 {
 
 
 .product {
-  background: #191c29;
+   background-color: rgba(25, 28, 41, 0.3);
+  opacity: 2.0;
   width: 30%;
   height: 450px;
   padding: 3px;
@@ -98,6 +99,7 @@ h1, h2 {
   margin: 40px 0;
   padding: 20px;
   justify-content: center; 
+  
   /* box-shadow: 0 20px 20px rgba(91, 140, 224, 0.1); */
 }
 
