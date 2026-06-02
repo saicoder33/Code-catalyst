@@ -1,0 +1,46 @@
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  
+}
+
+.home-btn{
+  padding: 10px 20px;
+  background-color: var(--primary-orange);
+  color: var(--text-white);
+  border: none;
+  border-radius: 8px;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  display: inline-flex;
+  font-family:'Manchester', sans-serif;
+  text-decoration: none;
+}
+h1,h2,h3{
+  font-family:'Manchester', sans-serif;
+  color: var(--text-white);
+  text-align: center;
+}
+
+.logo {
+   font-size: 1rem;
+   font-weight : 900;
+   color: var(--text-white);
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   padding: 10px 20px;
+   
+}
+
+.app_logo{
+    align-items:center;
+    width:40px;
+    height:40px;
+    background-color:var(--text-white)
+}
+
+
