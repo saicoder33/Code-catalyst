@@ -69,16 +69,16 @@ h1,h2,h3{
   font-size: 1.5rem;
 }
 
-.container {
+body > .container {
   position: relative;
-  width: 100%;   /* adjust as needed */
-  height: 300px;
-}
-
-nav .container {
-  position: static;
-  width: auto;
+  width: min(1200px, 92%);
+  min-height: 0;
   height: auto;
+  margin: 24px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
 }
 
 .box {
@@ -86,11 +86,10 @@ nav .container {
  border-radius: 8px;
  border: 1px solid rgba(255, 255, 255, 0.2);
   width: 400px;
-  height: 200px;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  animation: slideBox1 2s forwards;
+  min-height: 200px;
+  height: auto;
+  position: relative;
+  animation: none;
 }
 
 .box2 {
@@ -98,13 +97,11 @@ nav .container {
   border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 400px;
-  height: 200px;
-  position: absolute;
-  top: 50px;
-  left: 0;
-  opacity: 0;
-  animation: slideBox2 2s forwards;
-  animation-delay: 2s; /* starts after first box */
+  min-height: 200px;
+  height: auto;
+  position: relative;
+  opacity: 1;
+  animation: none;
 }
 
 @keyframes slideBox1 {
@@ -186,8 +183,41 @@ nav .container {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
   margin-top: 20px;
+}
+
+@media (max-width: 900px) {
+  .internship-content {
+    margin: 20px;
+  }
+
+  body > .container {
+    width: min(100%, 94%);
+    margin: 18px auto;
+    gap: 16px;
+  }
+
+  .box,
+  .box2,
+  .mern-stack,
+  .app-development {
+    width: min(100%, 480px);
+  }
+
+  .container > .box h3,
+  .container > .box2 h3,
+  .container > .box p,
+  .container > .box2 p {
+    padding: 14px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    line-height: 1.25;
+  }
 }
 
 @media (max-width: 900px) {

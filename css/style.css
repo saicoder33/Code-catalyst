@@ -219,12 +219,14 @@
 
         .text-gradient {
             background: linear-gradient(to right, var(--light-blue), var(--primary-blue));
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .text-gradient-orange {
             background: linear-gradient(to right, #ff9d4a, var(--primary-orange));
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -841,18 +843,94 @@
             }
         }
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 3rem;
+        @media (max-width: 992px) {
+            nav {
+                padding: 12px 0;
+            }
+
+            .nav-container {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            .logo {
+                font-size: 1.1rem;
             }
 
             .nav-links {
+                width: 100%;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 12px 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding-top: 140px;
+            }
+
+            .hero {
+                min-height: auto;
+                padding-top: 50px;
+            }
+
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+                margin-bottom: 24px;
+            }
+
+            .hero-btns {
                 flex-direction: column;
-                gap: 15px;
-                display: none;
+                gap: 12px;
+            }
+
+            .hero-btns .btn {
+                width: 100%;
+                text-align: center;
+            }
+
+            .hero-graphic {
+                height: auto;
+                min-height: 0;
+                background: none;
+                display: grid;
+                gap: 16px;
+                justify-items: center;
+                padding: 8px 0;
+            }
+
+            .glass-panel {
+                position: relative;
+                top: auto;
+                right: auto;
+                bottom: auto;
+                left: auto;
+                width: min(100%, 360px);
+                padding: 20px;
+                animation: none;
+            }
+
+            .panel-1,
+            .panel-2,
+            .panel-3 {
+                width: min(100%, 360px);
             }
 
             .section-header h2 {
                 font-size: 2rem;
+            }
+
+            .internship-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-section {
+                padding: 48px 20px;
             }
         }

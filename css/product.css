@@ -14,8 +14,11 @@
     font-size:1.2rem;
     color:var(--text-light);
     margin-top:15px;
-    display:flex;
-    justify-content:center;
+  display:block;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
 }
 
 /* Use Montserrat for all primary headings */
@@ -78,9 +81,10 @@ h1, h2 {
 .product {
    background-color: rgba(25, 28, 41, 0.3);
   opacity: 2.0;
-  width: 30%;
-  height: 450px;
-  padding: 3px;
+  width: min(100%, 380px);
+  min-height: 450px;
+  height: auto;
+  padding: 16px;
   position: relative;
   border-radius: 20px;
   text-align: center;
@@ -95,6 +99,7 @@ h1, h2 {
 
 .product-container {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
   margin: 40px 0;
   padding: 20px;
@@ -134,7 +139,7 @@ h1, h2 {
 
 .feature-list{
     text-align:left;
-    margin:70px;
+  margin:24px;
     font-size:1rem;
     color:var(--text-light);
     list-style:none
@@ -176,6 +181,66 @@ a:hover {
 .campus-screen{
   width: 48%;
   text-align: center;
+}
+
+@media (max-width: 992px) {
+  .product-header {
+    font-size: 2.2rem;
+  }
+
+  .product-container {
+    gap: 24px;
+    padding: 16px;
+  }
+
+  .product {
+    width: min(100%, 480px);
+    min-height: 0;
+  }
+
+  .feature-list {
+    margin: 18px;
+  }
+
+  .campus-container,
+  .campus-screen {
+    width: 100%;
+  }
+
+  #campus,
+  #society-seva {
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  #society-seva {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-header {
+    font-size: 1.8rem;
+  }
+
+  .product-subtitle {
+    font-size: 1rem;
+  }
+
+  .product {
+    padding: 14px;
+  }
+
+  .feature-list {
+    margin: 12px;
+    font-size: 0.95rem;
+  }
+
+  #btn {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .campus-screen img.campus-screenshot{

@@ -121,6 +121,7 @@ h1,h2,h3{
 
         .text-gradient-orange {
             background: linear-gradient(to right, #ff9d4a, var(--primary-orange));
+            background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -143,4 +144,25 @@ h1,h2,h3{
             color: var(--text-white);
             border: none;
             box-shadow: 0 4px 15px rgba(245, 127, 32, 0.3);
+        }
+
+        @media (max-width: 768px) {
+            .portal-card {
+                border-radius: 20px;
+                padding: 22px 16px;
+            }
+
+            .portal-card p {
+                margin-bottom: 24px;
+            }
+
+            .portal-actions {
+                width: 100%;
+            }
+
+            .portal-cta {
+                width: 100%;
+                justify-content: center;
+                gap: 10px;
+            }
         }
