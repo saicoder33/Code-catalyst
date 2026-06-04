@@ -934,3 +934,40 @@
                 padding: 48px 20px;
             }
         }
+/* === Mobile polish (<= 600px) === */
+@media (max-width: 600px) {
+    .container { padding: 0 16px; }
+    nav { padding: 10px 0; }
+    .nav-container { gap: 10px; }
+    .logo { font-size: 1rem; gap: 8px; }
+    .logo img { width: 32px; height: 32px; }
+    .nav-links { gap: 8px 14px; font-size: 0.85rem; }
+    .nav-container > .btn { padding: 8px 14px !important; font-size: 0.7rem !important; }
+    body { padding-top: 130px; }
+    .hero { padding-top: 30px; min-height: auto; }
+    .hero-content { margin-bottom: 30px; }
+    .hero-badge { font-size: 0.7rem; padding: 6px 12px; }
+    .hero h1 { font-size: 1.85rem; line-height: 1.2; }
+    .hero p { font-size: 0.95rem; }
+    .btn { padding: 11px 20px; font-size: 0.8rem; letter-spacing: 0.5px; }
+    .glass-panel { padding: 16px !important; width: 100% !important; max-width: 100% !important; }
+    .glass-panel h4 { font-size: 1rem !important; }
+    .section-header { margin-bottom: 36px; }
+    .section-header h2 { font-size: 1.6rem; }
+    .section-header p { font-size: 0.9rem; }
+    section { padding: 60px 0; }
+    .product-card, .internship-card { padding: 24px !important; }
+    .product-card h3 { font-size: 1.3rem; }
+    .cta-section h2 { font-size: 1.7rem; }
+    .cta-section p { font-size: 0.95rem; }
+    .footer-grid { gap: 28px; }
+    .footer-col h4 { font-size: 1rem; }
+    img, video { max-width: 100%; height: auto; }
+}
+
+@media (max-width: 380px) {
+    .hero h1 { font-size: 1.6rem; }
+    .section-header h2 { font-size: 1.4rem; }
+    .logo { font-size: 0.9rem; }
+    .nav-links { font-size: 0.78rem; gap: 6px 12px; }
+}

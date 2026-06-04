@@ -300,3 +300,12 @@ body > .container {
         .nav-links a:hover {
             color: var(--primary-orange);
         }
+@media (max-width: 600px) {
+    .container { padding: 0 16px !important; }
+    section { padding: 50px 0 !important; }
+    .internship-hero h1 { font-size: 1.8rem !important; }
+    .internship-hero p { font-size: 0.95rem !important; }
+    .internship-grid, .perks-grid, .roles-grid { grid-template-columns: 1fr !important; gap: 18px !important; }
+    .role-card, .perk-card { padding: 22px !important; }
+    img { max-width: 100%; height: auto; }
+}

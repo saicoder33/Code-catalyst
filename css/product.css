@@ -289,3 +289,12 @@ a:hover {
   justify-content: space-between;
   padding: 10px 20px;
 }
+@media (max-width: 600px) {
+    .container { padding: 0 16px !important; }
+    .product-hero, .product-section { padding: 50px 0 !important; }
+    .product-hero h1 { font-size: 1.8rem !important; }
+    .product-hero p { font-size: 0.95rem !important; }
+    .product-features, .features-grid, .products-grid { grid-template-columns: 1fr !important; gap: 18px !important; }
+    .product-card, .feature-card { padding: 22px !important; }
+    img { max-width: 100%; height: auto; }
+}

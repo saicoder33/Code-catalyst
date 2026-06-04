@@ -166,3 +166,13 @@ h1,h2,h3{
                 gap: 10px;
             }
         }
+
+@media (max-width: 600px) {
+    .container { padding: 0 16px !important; }
+    .portal-hero, .portal-section { padding: 50px 0 !important; }
+    .portal-hero h1 { font-size: 1.8rem !important; }
+    .portal-hero p { font-size: 0.95rem !important; }
+    .portal-form, .portal-card { padding: 22px !important; width: 100% !important; max-width: 100% !important; }
+    input, button { width: 100%; box-sizing: border-box; }
+    img { max-width: 100%; height: auto; }
+}
