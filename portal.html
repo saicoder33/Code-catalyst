@@ -26,13 +26,47 @@
         <div id="dynamic-bg-elements"></div>
         <div class="grid-overlay"></div>
     </div>
-   <div class="navbar">
-    <a class="logo">
-        <img src="assets/app_logo.png" alt="Aytida Logo" class="app_logo"> Aytida Technologies
-    </a>
-    <a class="home-btn" href="index.html">Home</a>
-    </div>
-    
+
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="assets/app_logo.png" alt="Aytida Logo"> Aytida Technologies
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="internship.html">Internship</a></li>
+                <li><a href="portal.html">Portal</a></li>
+            </ul>
+            <a href="index.html#contact" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.8rem;">Let's Talk</a>
+        </div>
+    </nav>
+
+     <section id="portal" class="section-padding" style="padding-top: 0; padding-bottom: 100px;">
+        <div class="container">
+            <div class="portal-card">
+                <!-- Decorative elements -->
+                <div style="position: absolute; top: -100px; right: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(245, 127, 32, 0.15) 0%, transparent 70%); filter: blur(50px); pointer-events: none;"></div>
+                <div style="position: absolute; bottom: -100px; left: -100px; width: 300px; height: 300px; background: radial-gradient(circle, rgba(42, 129, 234, 0.1) 0%, transparent 70%); filter: blur(50px); pointer-events: none;"></div>
+                
+                <img src="assets/cclogo.png" alt="Code Catalyst Logo" class="portal-logo">
+                
+                <h2>Intern <span class="text-gradient-orange">Login Portal</span></h2>
+                
+                <p>
+                    Ready to accelerate your journey? Log in to your dedicated workspace to access training modules, track your internship progress, and collaborate with the engineering team.
+                </p>
+                
+                <div class="portal-actions">
+                    <a href="https://codecatalyst.online/" target="_blank" class="btn btn-primary portal-cta">
+                        <i class="fa-solid fa-right-to-bracket"></i> Intern Login Dashboard
+                    </a>
+                    <p style="font-size: 0.9rem; opacity: 0.7;">Direct access to codecatalyst.online</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>

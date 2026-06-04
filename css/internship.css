@@ -75,6 +75,12 @@ h1,h2,h3{
   height: 300px;
 }
 
+nav .container {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
 .box {
  background-color: rgba(25, 28, 41, 0.3);
  border-radius: 8px;
@@ -203,3 +209,64 @@ h1,h2,h3{
   border-radius: 8px;
   position: relative;
 }
+
+  nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid transparent;
+        }
+
+        
+        nav.scrolled {
+            background: rgba(4, 13, 26, 0.9);
+            padding: 15px 0;
+            border-bottom: 1px solid var(--glass-border);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--text-white);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            background: white;
+            padding: 5px;
+            border-radius: 8px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-orange);
+        }
