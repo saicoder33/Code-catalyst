@@ -871,6 +871,14 @@
             }
         }
 
+         @media (max-width: 1024px) and (min-width: 769px) {
+            .nav-links { gap: 18px; }
+            .logo { font-size: 1.2rem; }
+            .logo img { height: 34px; }
+            .nav-container > .btn { padding: 8px 14px !important; font-size: 0.7rem !important; 
+            }
+        }
+
         @media (max-width: 768px) {
             body {
                 padding-top: 140px;
