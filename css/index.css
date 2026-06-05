@@ -282,3 +282,11 @@
                 height: 34px;
             }
         }
+/* Mobile polish */
+@media (max-width: 600px) {
+    .container { padding: 0 16px !important; }
+    section { padding: 50px 0 !important; }
+    h1, h2 { word-wrap: break-word; }
+    .grid, [class*="grid"] { grid-template-columns: 1fr !important; gap: 20px !important; }
+    img { max-width: 100%; height: auto; }
+}

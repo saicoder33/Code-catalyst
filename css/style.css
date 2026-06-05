@@ -18,8 +18,6 @@
 
         html {
             scroll-behavior: smooth;
-            overflow-x: hidden;
-            max-width: 100%;
         }
 
         body {
@@ -28,7 +26,6 @@
             color: var(--text-light);
             line-height: 1.6;
             overflow-x: hidden;
-            max-width: 100%;
         }
 
         h1,
@@ -179,7 +176,7 @@
 
         /* Reusable Components */
         .container {
-            max-width: 100%;
+            max-width: 1280px;
             margin: 0 auto;
             padding: 0 5%;
         }
@@ -270,7 +267,7 @@
             position: fixed;
             top: 0;
             left: 0;
-            /* max-width: 100%; */
+            width: 100%;
             padding: 20px 0;
             z-index: 1000;
             transition: all 0.3s ease;
@@ -289,8 +286,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            gap: 20px;
             flex-wrap: nowrap;
-            flex-shrink: 0;
         }
 
         .logo {
@@ -300,6 +297,13 @@
             display: flex;
             align-items: center;
             gap: 10px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .nav-container > .btn {
+            white-space: nowrap;
+            flex-shrink: 0;
         }
 
         .logo img {
@@ -632,6 +636,7 @@
             animation: scroll 20s linear infinite;
             font-size: 2.5rem;
             color: rgba(255, 255, 255, 0.5);
+            max-width: 100%;
         }
 
         .marquee-content i,
@@ -850,7 +855,7 @@
             }
         }
 
-        @media (max-width: 992px) {
+        @media (max-width: 768px) {
             nav {
                 padding: 12px 0;
             }
@@ -873,12 +878,11 @@
             }
         }
 
-         @media (max-width: 1024px) and (min-width: 769px) {
+        @media (max-width: 1024px) and (min-width: 769px) {
             .nav-links { gap: 18px; }
             .logo { font-size: 1.2rem; }
             .logo img { height: 34px; }
-            .nav-container > .btn { padding: 8px 14px !important; font-size: 0.7rem !important; 
-            }
+            .nav-container > .btn { padding: 8px 14px !important; font-size: 0.7rem !important; }
         }
 
         @media (max-width: 768px) {
