@@ -127,7 +127,7 @@ const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 const links = document.querySelectorAll(".nav-links a");
 
-// Toggle menu when hamburger clicked
+// Toggle menu
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
@@ -137,4 +137,9 @@ links.forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
   });
+});
+
+// Extra: Close menu on page load (important for multi-page sites)
+window.addEventListener("load", () => {
+  navLinks.classList.remove("active");
 });
