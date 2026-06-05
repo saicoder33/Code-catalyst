@@ -288,8 +288,8 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   padding: 10px 20px;
-  /* max-width: 100%; */
-}
+  max-width: 100%; 
+ }
 @media (max-width: 600px) {
     .container { padding: 0 16px !important; }
     .product-hero, .product-section { padding: 50px 0 !important; }
@@ -298,4 +298,31 @@ a:hover {
     .product-features, .features-grid, .products-grid { grid-template-columns: 1fr !important; gap: 18px !important; }
     .product-card, .feature-card { padding: 22px !important; }
     img { max-width: 100%; height: auto; }
+}  
+
+/* 🔽 Add hamburger + nav toggle here */
+  .hamburger {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--text-white);
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: rgba(4, 13, 26, 0.95);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 220px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: all 0.3s ease;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
