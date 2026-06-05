@@ -569,6 +569,7 @@
         .internship-card{
             display: flex;
             flex-direction: column;
+            max-width: 100%;
         }
 
         .catalyst-logo {
