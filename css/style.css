@@ -579,6 +579,7 @@
         .internship-card{
             display: flex;
             flex-direction: column;
+            width: 100%;
         }
 
         .catalyst-logo {
@@ -630,6 +631,7 @@
             margin-top: 30px;
             border-top: 1px solid rgba(255, 255, 255, 0.05);
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            max-width: 100%;
         }
 
         .marquee-content {
@@ -638,6 +640,7 @@
             animation: scroll 20s linear infinite;
             font-size: 2.5rem;
             color: rgba(255, 255, 255, 0.5);
+            max-width: 100%;
         }
 
         .marquee-content i,
