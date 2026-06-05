@@ -267,7 +267,7 @@
         }
 
         /* Navbar */
-        nav {
+        /* nav {
             position: fixed;
             top: 0;
             left: 0;
@@ -334,7 +334,112 @@
 
         .nav-links a:hover {
             color: var(--primary-orange);
-        }
+        } */
+
+        nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid transparent;
+}
+
+nav.scrolled {
+    background: rgba(4, 13, 26, 0.9);
+    padding: 15px 0;
+    border-bottom: 1px solid var(--glass-border);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--text-white);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.nav-container > .btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    background: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-light);
+}
+
+.nav-links a:hover {
+    color: var(--primary-orange);
+}
+
+/* 🔽 Hamburger styles */
+.hamburger {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    color: var(--text-white);
+}
+
+/* 🔽 Mobile view */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: rgba(4, 13, 26, 0.95);
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 220px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+        transition: all 0.3s ease;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
 
         /* Hero Section */
         .hero {
