@@ -63,6 +63,10 @@ h1, h2 {
   
 }
 
+.campus-screenshot:hover {
+  animation: rotateOut 1s;
+}
+
 /* make logo and title sit on same line and center as a group */
 .product > .product_logo,
 .product > h2 {
