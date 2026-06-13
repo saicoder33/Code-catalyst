@@ -176,8 +176,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 20px;
-            flex-wrap: nowrap;
         }
 
         .logo {
@@ -217,13 +215,6 @@
             color: var(--primary-orange);
         }
 
-        .hamburger {
-            display: none;
-            font-size: 26px;
-            cursor: pointer;
-            color: var(--text-white);
-        }
-
         .btn {
             display: inline-block;
             padding: 12px 28px;
@@ -256,8 +247,8 @@
             }
 
             .nav-container {
-                flex-wrap: nowrap;
-                justify-content: space-between;
+                flex-wrap: wrap;
+                justify-content: center;
                 gap: 12px;
             }
 
@@ -274,15 +265,6 @@
         }
 
         @media (max-width: 768px) {
-            .nav-container {
-                position: relative;
-                gap: 10px;
-            }
-
-            .nav-container > .btn {
-                display: none;
-            }
-
             body {
                 padding-top: 140px;
             }
@@ -298,29 +280,6 @@
 
             .logo img {
                 height: 34px;
-            }
-
-            .hamburger {
-                display: block;
-            }
-
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                background: rgba(4, 13, 26, 0.95);
-                position: absolute;
-                top: calc(100% + 12px);
-                right: 0;
-                width: 220px;
-                padding: 15px;
-                border-radius: 8px;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-                transition: all 0.3s ease;
-                z-index: 1001;
-            }
-
-            .nav-links.active {
-                display: flex;
             }
         }
 /* Mobile polish */
