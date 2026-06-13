@@ -3,6 +3,7 @@
     font-size:3rem;
     background:var(--primary-orange);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Montserrat', sans-serif;
 
