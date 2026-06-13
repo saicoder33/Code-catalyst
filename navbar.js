@@ -14,7 +14,4 @@ document.addEventListener("DOMContentLoaded", () => {
       navLinks.classList.remove("active");
     });
   });
-
-  // Always reset menu on page load
-  navLinks.classList.remove("active");
 });
