@@ -331,6 +331,7 @@ nav.scrolled {
     font-weight: 500;
     font-size: 0.95rem;
     color: var(--text-light);
+    padding: 8px 12px;
 }
 
 .nav-links a:hover {
