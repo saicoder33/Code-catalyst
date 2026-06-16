@@ -320,7 +320,7 @@ nav.scrolled {
 }
 
 .nav-links {
-    margin-left: auto;
+    margin-left: 5px;
     display: flex;
     gap: 30px;
     list-style: none;
