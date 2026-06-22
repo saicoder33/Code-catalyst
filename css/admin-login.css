@@ -8,6 +8,7 @@ body {
   font-family: "Montserrat", sans-serif;
   min-height: 100vh;
   background: #0f172a; /* fallback; replace with your page background/image */
+  overflow: hidden;
 }
 
 .login-container {
@@ -107,27 +108,8 @@ body {
   color: rgba(255, 255, 255, 0.85);
 }
 
-.btn-submit {
-  width: 100%;
-  padding: 14px;
-  border: none;
-  border-radius: 8px;
-  background: #3b82f6;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
-}
 
-.btn-submit:hover {
-  background: #2563eb;
-}
 
-.btn-submit:active {
-  transform: scale(0.98);
-}
 
 @media (max-width: 500px) {
   .login-form {
